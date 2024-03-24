@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main img{
+            width: 80%;
+            height: 60%;
+            object-fit: cover;
+            border: 10px solid white;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+   
+     
+  <div class="main">
+    <img  src=" https://source.unsplash.com/random" alt="">
+    <button id="btn">next</button>
+  </div>
+    <script>
+        let btn=document.querySelector("#btn")
+        btn.addEventListener("click",()=>{
+            location.reload();
+
+        })
+    </script>
+</body>
+</html>
